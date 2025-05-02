@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Зборко</string>
+    <string name="new_set">Нови букви</string>
+    <string name="check">Провери</string>
+    <string name="points">Поени: 0</string>
+    <string name="new_activity">Нова игра</string>
+    <string name="exit">Исклучи</string>
+    <string name="score_label">Поени: %d</string>
+    <string name="valid_word">✅ Валиден збор!\nМојот збор беше: %s\nТвојот збор беше: %s</string>
+    <string name="invalid_word">❌ Невалиден збор!\nМојот збор беше: %s\nТвојот збор беше: %s</string>
+</resources>

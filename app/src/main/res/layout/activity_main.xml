@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Горен ред со 5 полиња -->
+    <GridLayout
+        android:id="@+id/availableLettersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:columnCount="5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:alignmentMode="alignBounds"
+        android:useDefaultMargins="true"
+        />
+
+    <GridLayout
+        android:id="@+id/selectedLettersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:alignmentMode="alignBounds"
+        android:useDefaultMargins="true" />
+
+    <!-- Контролни копчиња -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="android:attr/ buttonBarStyle">
+
+        <Button
+            android:id="@+id/newGameButton"
+            style="android:attr/ buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#FFCDD2"
+            android:backgroundTintMode="src_atop"
+            android:textColor="#555555"
+            android:text="@string/new_set"
+            android:layout_marginEnd="60dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="android:attr/ buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#C8E6C9"
+            android:backgroundTintMode="src_atop"
+            android:text="@string/check"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="android:attr/ buttonBarStyle">
+
+        <Button
+            android:id="@+id/newActivityButton"
+            style="android:attr/ buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#B2EBF2"
+            android:backgroundTintMode="src_atop"
+            android:textColor="#555555"
+            android:text="@string/new_activity"
+            android:layout_marginEnd="60dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/exitButton"
+            style="android:attr/ buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#D7CCC8"
+            android:backgroundTintMode="src_atop"
+            android:text="@string/exit"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="letter_size">50dp</dimen>
+    <dimen name="letter_margin">8dp</dimen>
+</resources>
